@@ -12,9 +12,17 @@ a {
   text-decoration: none;
   color: #333;
 }
+body {
+  height: 1500px;
+}
 /* nav */
 nav {
-  /* background-color: aliceblue; */
+  background-color: aliceblue;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -91,11 +99,12 @@ nav > a:hover {
   width: 70%;
   max-width: 1280px;
   min-width: 390px;
-  margin: 100px auto;
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 50px;
+  padding-top: 171px;
 }
 .g_logo {
   width: 50%;
@@ -119,7 +128,7 @@ nav > a:hover {
   opacity: 0.5;
 }
 .search_bar input {
-  width: 70%;
+  width: 80%;
   padding: 7px;
   border: none;
   outline: none;
@@ -174,7 +183,7 @@ nav > a:hover {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: 90px;
+  max-width: 70px;
 }
 /* hover했을때 나오는 배경 */
 .hover_bg {

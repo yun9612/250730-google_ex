@@ -42,8 +42,8 @@ body {
   border-radius: 5px;
   outline: none;
 }
-.input_group input::placeholder{
-    color: #b9cceb;
+.input_group input::placeholder {
+  color: #b9cceb;
 }
 .input_group label i {
   color: #92a6c7;
@@ -53,6 +53,7 @@ button {
   border: none;
   padding: 10px;
   border-radius: 5px;
+  cursor: pointer;
 }
 button[type="submit"] {
   background-color: #3a68b8;
@@ -70,4 +71,7 @@ button[type="submit"]:hover {
 }
 button[type="button"]:hover {
   background-color: #ffec80;
+}
+input:focus::placeholder {
+  color: transparent;
 }
